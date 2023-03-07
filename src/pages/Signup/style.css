@@ -1,0 +1,23 @@
+.SignUp {
+  width: 50%;
+  margin: auto;
+  padding: 45px;
+  border-radius: 15px;
+  border: 1px solid #dddbdb;
+  margin-top: 10px;
+}
+.flex {
+  display: flex;
+  width: 100%;
+}
+.label {
+  font-size: 15px;
+  text-align: justify;
+}
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+.inputs p a {
+  color: #108a00;
+}
