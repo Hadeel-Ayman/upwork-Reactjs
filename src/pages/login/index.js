@@ -1,4 +1,5 @@
 import React from "react";
+import Already from "../../components/alreadyComponent";
 import Btn from "../../components/Button";
 import FormCard from "../../components/cardForm";
 import Input from "../../components/input";
@@ -14,11 +15,18 @@ const Login = () => {
   return (
     <FormCard>
       <Title title={"Log in to Upwork"} />
-      <div>
-        <Input label={"Email"} width="100%" />
-        <Input label={"Password"} width="100%" />
-      </div>
-      <Btn title={"Login"} style={style} color={"success"} />
+      <form>
+        <div>
+          <Input label={"Email"} width="100%" />
+          <Input label={"Password"} width="100%" />
+        </div>
+        <Btn title={"Login"} style={style} color={"success"} type="submit" />
+        <Already
+          link={"/signup"}
+          LinkTitle=" Sign Up"
+          desc=" Dont have an Upwork acount?"
+        />
+      </form>
     </FormCard>
   );
 };

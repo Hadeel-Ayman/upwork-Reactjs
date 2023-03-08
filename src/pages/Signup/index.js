@@ -6,8 +6,8 @@ import "./style.css";
 import { IconButton } from "@mui/material";
 import CheckBox from "../../components/Checkbox";
 import Btn from "../../components/Button";
-import { Link } from "react-router-dom";
 import FormCard from "../../components/cardForm";
+import Already from "../../components/alreadyComponent";
 
 const style = {
   textAlign: "center",
@@ -56,10 +56,11 @@ const SignUp = () => {
               style={style}
             />
           </form>
-          <p>
-            Already have an acount?
-            <Link to={"/login"}> Log In</Link>
-          </p>
+          <Already
+            link={"/login"}
+            desc=" Already have an acount?"
+            LinkTitle={" login"}
+          />
         </div>
       </FormCard>
     </>

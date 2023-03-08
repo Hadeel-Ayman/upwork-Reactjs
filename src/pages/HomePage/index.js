@@ -6,7 +6,7 @@ import "./style.css";
 const Home = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             {/* <div className="home"> */}
                 <div className="container">
                     <div className="allContent">
